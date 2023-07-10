@@ -7,6 +7,7 @@
     <title>Home Page</title>
 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media-queries.css">
 
 </head>
 
@@ -28,7 +29,7 @@
                 <img src="images/asset 1.png" alt="company logo">
             </a>
             <!-- Nav Items-->
-            <div class="nav-links">
+            <div class="nav-links" id="nav-links">
                 <ul class="flex">
                     <li><a href="#" class="hover-link">Product</a></li>
                     <li><a href="#" class="hover-link">Customers</a></li>
@@ -38,6 +39,9 @@
                     <li><a href="#" class="hover-link primary-button">Sign up</a></li>
                 </ul>
             </div>
+            <a href="" class="nav-toggle hover-link" id="nav-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </a>
         </div>
     </nav>
 
@@ -142,7 +146,8 @@
         </section>
 
         <section class="big-feature-section">
-            <div class="container flex big-feature-container" style="flex-direction: row-reverse;">
+            <!-- <div class="container flex big-feature-container" style="flex-direction: row-reverse;"> -->
+            <div class="container flex big-feature-container" id="second-big-feature">
                 <div class="feature-img">
                     <img src="images/asset 21.png" alt="">
                 </div>
@@ -167,11 +172,11 @@
             </div>
         </section>
     </section>
-    <hr>
+    <!-- <hr> -->
+
     <!-- Examples -->
     <section class="examples-section">
         <div class="container">
-
             <div class="examples-header flex">
                 <h2>One platform, endless possibilities</h2>
                 <a href="#" class="secondary-button examples-btn">See more Examples <i
@@ -187,66 +192,101 @@
                     <h3 class="card-text">Can users find important pages on my website?</h3>
                 </a>
 
-                <a href="#" class="examples-card" >
+                <a href="#" class="examples-card">
                     <h3 class="card-text">Is my website's intended audience clear?</h3>
                 </a>
 
-                <a href="#" class="examples-card" >
+                <a href="#" class="examples-card">
                     <h3 class="card-text">Do visitors understand what a page is about?</h3>
                 </a>
-
             </div>
+        </div>
+    </section>
 
+    <!-- Color Section -->
+    <section class="blue-color">
+        <div class="container flex">
+            <div class="text-left">
+                <h2>No participants?</h2>
+                <h2>No problem.</h2>
+                <p>Our integrated panel allows you to quickly and affordably recruit research participants that
+                    precisely match your target audience.</p>
+            </div>
+            <img src="" alt="" class="img-right">
         </div>
     </section>
 
     <section class="cta-section">
-
+        <div class="container text-start flex">
+            <h2>Start testing today</h2>
+            <p>Take the guesswork out of design decisions</p>
+            <a href="#" class="hover-link primary-button">Get Started</a>
+        </div>
     </section>
-<!-- Footer -->
-    <footer> 
+
+    <!-- Footer -->
+    <footer>
         <div class="container flex footer-container">
             <a href="#" class="company-logo">
                 <img src="images/asset 1.png" alt="company-logo">
             </a>
             <div class="link-column flex">
-                <h4>Methodology</h4>
-                <a href="#" class="hover-link">Product</a>
-                <a href="#" class="hover-link">Product</a>
-                <a href="#" class="hover-link">Product</a>            
-                <a href="#" class="hover-link">Product</a>
-                <a href="#" class="hover-link">Product</a>
+                <h4>Product</h4>
+                <a href="#" class="hover-link">Overview</a>
+                <a href="#" class="hover-link">Pricing</a>
+                <a href="#" class="hover-link">Research panel</a>
+                <a href="#" class="hover-link">Customers</a>
+                <a href="#" class="hover-link">Status Page</a>
+                <a href="#" class="hover-link">Sign up</a>
+                <a href="#" class="hover-link">Book a Demo</a>
             </div>
 
             <div class="link-column flex">
                 <h4>Resources</h4>
-                <a href="#" class="hover-link">Product</a>
-                <a href="#" class="hover-link">Product</a>
-                <a href="#" class="hover-link">Product</a>            
-                <a href="#" class="hover-link">Product</a>
-                <a href="#" class="hover-link">Product</a>
+                <a href="#" class="hover-link">Card sorting</a>
+                <a href="#" class="hover-link">Prototype testing</a>
+                <a href="#" class="hover-link">First Click testing</a>
+                <a href="#" class="hover-link">Preference test</a>
+                <a href="#" class="hover-link">Five Seconds tests</a>
+                <a href="#" class="hover-link">Desgin surveys</a>
             </div>
 
             <div class="link-column flex">
-                <h4>Product</h4>
-                <a href="#" class="hover-link">Product</a>
-                <a href="#" class="hover-link">Product</a>
-                <a href="#" class="hover-link">Product</a>            
-                <a href="#" class="hover-link">Customers Paf</a>
-                <a href="#" class="hover-link">Product</a>
+                <h4>Methodology</h4>
+                <a href="#" class="hover-link">Blog</a>
+                <a href="#" class="hover-link">Examples</a>
+                <a href="#" class="hover-link">Testing Guide</a>
+                <a href="#" class="hover-link">Research panel calculator</a>
+                <a href="#" class="hover-link">Help Center</a>
+                <a href="#" class="hover-link">Contact</a>
+                <a href="#" class="hover-link">Careers</a>
             </div>
         </div>
     </footer>
-    
+
     <div class="subfooter">
-        <div class="container">
-        
+        <div class="container flex subfooter-container">
+            <a href="#" class="hover-link">Privacy Policy</a>
+            <a href="#" class="hover-link">Terms & Condition</a>
+            <a href="#" class="hover-link">Security information</a>
+            <a href="#" class="hover-link"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#" class="hover-link"><i class="fa-brands fa-twitter"></i></a>
         </div>
     </div>
 
-    <div class="spacer" style="height: 100vh;"></div>
+    <!-- <div class="spacer" style="height: 100vh;"></div> -->
 
     <script src="https://kit.fontawesome.com/e170231ead.js" crossorigin="anonymous"></script>
+
+    <script>
+        const toggleButton  = document.getElementById('nav-toggle');
+        const navLinks = document.getElementById('nav-links');
+
+        toggleButton.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        })
+
+    </script>
 
 </body>
 
